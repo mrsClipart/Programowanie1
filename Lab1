@@ -1,0 +1,89 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <pch.h>
+
+int main()
+{
+	int day = 0;
+	int month = 0;
+	int dayofweek = 0;
+	int weeks = 0;
+
+	printf("Podaj dzisiejszą datę: /nPodaj dzień: ");
+	scanf_s("%d", &day);
+	printf("Podaj miesiąc: ");
+	scanf_s("%d", &month);
+
+
+	if (month > 12)
+	{
+		printf("Nieprawidlowa wartosc dla miesiaca!");
+	} esle
+		{
+			if (month == 1)
+			{
+				 weeks = (day - 1) % 7;
+			}
+			if (month == 2)
+		{
+				weeks = (31 + day - 1) % 7;
+		}
+		if (month == 3)
+		{
+			weeks = (31 + 28 + day - 1) % 7;
+		}
+		if (month == 4)
+		{
+			weeks = (31 + 28 + 31 + day - 1) % 7;
+		}
+		if (month == 5)
+		{
+			weeks = (31 + 28 + 31 + 30 + day - 1) % 7;
+		}
+		if (month == 6)
+		{
+			weeks = (31 + 28 + 31 + 30 + 31 + day - 1) % 7;
+		}
+		if (month == 7)
+		{
+			weeks = (31 + 28 + 31 + 30 + 31 + 30 + day - 1) % 7;
+		}
+		if (month == 8) 	weeks = (31 + 28 + 31 + 30 + 31 + 30 + 31 + day - 1) % 7;
+		
+		if (month == 9)
+		{
+			weeks = (31 + 28 + 31 + 30 + 31 + 30 + 31 + 31 + day - 1) % 7;
+		}
+		if (month == 10)
+		{
+			weeks = (31 + 28 + 31 + 30 + 31 + 30 + 31 + 31 + 30 + day - 1) % 7;
+		}
+		if (month == 11)
+		{
+			weeks = (31 + 28 + 31 + 30 + 31 + 30 + 31 + 31 + 30 + 31 + day - 1) % 7;
+		}
+		if (month == 12)
+		{
+			weeks = (31 + 28 + 31 + 30 + 31 + 30 + 31 + 31 + 30 + 31 + 30 + day - 1) % 7;
+		}
+
+
+
+
+
+		}
+
+		if (weeks = 0) printf("Dzień tygodnia to poniedziałek");
+		if (weeks = 1) printf("Dzień tygodnia to wtorek");
+		if (weeks = 2) printf("Dzień tygodnia to sroda");
+		if (weeks = 3) printf("Dzień tygodnia to czwartek");
+		if (weeks = 4) printf("Dzień tygodnia to piatek");
+		if (weeks = 5) printf("Dzień tygodnia to sobota");
+		if (weeks = 6) printf("Dzień tygodnia to niedziela ");
+
+
+
+
+
+}
+
